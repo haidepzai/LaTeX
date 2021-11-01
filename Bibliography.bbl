@@ -1,0 +1,32 @@
+\begin{thebibliography}{1}
+  \providebibliographyfont{name}{}%
+  \providebibliographyfont{lastname}{}%
+  \providebibliographyfont{title}{\emph}%
+  \providebibliographyfont{jtitle}{\btxtitlefont}%
+  \providebibliographyfont{etal}{\emph}%
+  \providebibliographyfont{journal}{}%
+  \providebibliographyfont{volume}{}%
+  \providebibliographyfont{ISBN}{\MakeUppercase}%
+  \providebibliographyfont{ISSN}{\MakeUppercase}%
+  \providebibliographyfont{url}{\url}%
+  \providebibliographyfont{numeral}{}%
+  \expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
+
+\expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
+\bibitem {Lange.2006}
+\btxnamefont {\btxlastnamefont {Lange}, Hans\btxfnamespacelong J{\"u}rgen}
+  \btxandlong {}\ \btxnamefont {Matthias \btxlastnamefont {Gasch}}\
+  (\btxeditorslong {})\btxauthorcolon\ \btxtitlefont {W{\"o}rterbuch zur
+  Inneren Sicherheit}.
+\newblock \btxpublisherfont {{VS Verlag f{\"u}r Sozialwissenschaften}},
+  Wiesbaden, 2006\ifbtxprintISBN {, \mbox{\btxISBN~\btxISBNfont
+  {978-3-531-90596-9}}}.
+
+\bibitem {Schoening2009}
+\btxnamefont {\btxlastnamefont {Schöning}, Uwe}\btxauthorcolon\ \btxtitlefont
+  {Ideen der Informatik 3.A.}
+\newblock \btxpublisherfont {Oldenbourg Wissenschaftsverlag},
+  2009\ifbtxprintISBN {, \mbox{\btxISBN~\btxISBNfont {978-3-486-59405-8}}}.
+\newblock {\latintext \btxurlfont{https://doi.org/10.1524/9783486594058}}.
+
+\end{thebibliography}

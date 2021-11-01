@@ -1,0 +1,116 @@
+\documentclass{report}
+
+\usepackage{hyperref}
+\usepackage{amsmath}
+
+\usepackage{algorithm2e}
+\usepackage{listings} % Für Source code
+\usepackage{color}
+\definecolor{scgreen}{rgb}{0,0.6,0}
+\definecolor{scgray}{rgb}{0.6,0.6,0.6}
+\definecolor{scpurple}{rgb}{0.6,0,0.6}
+\definecolor{orange}{rgb}{1,0.5,0.4}
+
+\lstset{
+	backgroundcolor=\color{white},
+	basicstyle=\normalsize,
+	breaklines=true,
+	captionpos=b,
+	commentstyle=\color{scpurple}
+	frame=single,
+	keepspaces=true,
+	keywordstyle=\color{scgreen},
+	morekeywords={socket},
+	numbers=left,
+	numbersep=10pt,
+	numberstyle=\tiny\color{scgray},
+	showspaces=false,
+	showstringspaces=false,
+	showtabs=false,
+	stepnumber=1,
+	stringstyle=\color{scpurple},
+	tabsize=4
+}
+
+\begin{document}
+	
+	\chapter{Mathematik}
+	Sei $\epsilon$ beliebig, aber fest, dann gilt:
+	$$ \forall x \in X: x \leq \epsilon $$
+	\begin{equation} 
+		\alpha \beta \gamma \Gamma \delta \Delta \epsilon \varepsilon \Theta \theta \vartheta \Phi \phi \varphi
+	\end{equation}
+	\begin{equation}
+		\sin \cos \arcsin \sinh \vec{A}
+		\rightarrow \leftarrow \Leftrightarrow \top \bot \emptyset
+	\end{equation}
+	\begin{equation} \tag{2}
+		\neg \exists \forall \subset \supset \in \notin \land \lor
+		\label{formel3}
+	\end{equation}
+	\\
+	Erklärung: Das Ergebnis in Formel \ref{formel3} ist beachtlich.
+	
+	\section{Formeln}
+	Limes:
+	$$ \lim_{x_{i} \to 0} \frac{1}{x^{20}} = \infty $$
+	\\ Wurzel:
+	$$ \sqrt[n]{a} $$
+	\\ Summe:
+	$$ \sum_{i=1}^{\infty} 1 = \infty $$
+	\\ Integral:
+	$$ \int_{i=0}^{\infty} f(x) $$
+	
+	\section{Klammern}
+	$$ (abc) $$
+	\\
+	$$ \left (\int_{i=0}^{\infty} f(x) dx \middle | x > 0 \right) $$ 
+	% \middle | = Großer Senkrechter Strich
+	\\
+	$$ ( \big( \Big( \bigg( \Bigg( $$
+	
+	\section{Matrizen und Vektoren}
+	
+	$$ A^{m,n} = \begin{pmatrix}
+		a_{1,1} & a_{1,2} & \cdots & a_{1,n} \\
+		a_{2,1} & a_{2,2} & \cdots & a_{2,n} \\
+		\vdots 	& \vdots  & \ddots & \vdots  \\
+		a_{m,1} & a_{m,2} & \cdots & a_{m,n}
+	\end{pmatrix} $$
+	\\
+	Vektor:
+		$$ V = \begin{pmatrix}
+		a_{1} \\
+		a_{2}  \\
+		\vdots 	\\
+		a_{m}
+	\end{pmatrix} $$
+	\\
+	$$ f(x) = \begin{cases}
+		x & \quad \text{if } x \leq 0 \\
+		~ &  \quad \text{else}
+	\end{cases}$$
+
+	\chapter{Informatik}
+	\section{Algorithmen}
+	\begin{algorithm}
+		\KwIn{x}
+		\KwOut{Spaghetti}
+		v $\gets$ 2 \\
+		\While{hungry}{
+			\eIf{spaghetti available}{make spaghetti}{eat schinken}
+			eat
+		}
+	\caption{Greedy Algo}
+	\end{algorithm}
+
+	\section{Quellcode}
+	\begin{lstlisting}[language=Python, frame=single]
+		print("Hello World")
+	\end{lstlisting}
+
+	Import Basics.py:
+	\lstinputlisting[language=Python, frame=single]{Basics.py}
+	
+
+\end{document}

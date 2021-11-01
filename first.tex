@@ -1,0 +1,236 @@
+\documentclass[a4paper, 12pt]{report}
+\usepackage[T1]{fontenc} %UTF-8
+
+\linespread{1.2} %Zeilenabstand
+\usepackage{setspace} % für doublespace
+
+\hyphenation{eirmod labo-re}
+
+\usepackage{hyperref}
+
+\usepackage{parskip} %neuer Absatz
+\setlength{\parindent}{0pt} %Einzug 0 bei Paragraph
+
+\usepackage[table]{xcolor}
+
+\usepackage{graphicx}
+\usepackage{wrapfig}
+
+\usepackage[german]{babel}
+\usepackage{titlesec}
+\titleformat{\chapter}[display]{\normalfont\bfseries}{}{0pt}{\Huge}
+
+\usepackage{pdfpages} %PDF einbinden
+
+\title{LaTeX Kurs}
+\author{Hai Vu}
+
+\begin{document}
+	\maketitle
+	
+	\begin{abstract}
+		Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.   
+	\end{abstract}
+
+	\begin{doublespace}
+		\tableofcontents
+	\end{doublespace}	
+	
+	\chapter{Einleitung}
+	\section{Einführung in das Themengebiet} %1.1
+	\textbf{Hello World} %Kommentar
+	\\
+	Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+	   	
+	Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.  
+	
+	\chapter{Grundlagen}
+	\section{Section 2.1} %2.1
+	Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.   
+	
+	Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.   
+	
+	\subsection{Subsection 2.1.1} %2.1.1
+	\subsubsection{subsubsection} 
+	Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.   
+	
+	\subsection{Nächste Subsection 2.1.2} %2.1.2
+	At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur.
+	
+	\section{ZweiZwei}
+	\subsection{ZweiZweiEins}
+	\paragraph{Paragraph}
+	Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
+	\clearpage %neue Seite  
+	\subparagraph{Subparagraph}
+	Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip\ldots ~ex ea commodo... consequat. 
+	\paragraph{Bindestriche}
+	Google-Account
+	Seite 42--1337
+	Gedankenstrich --- Gedankenstrich
+	$-1$
+	\textbf{\textit{fetter kursiver Text}}
+	\paragraph{Anführungsstriche}
+	"Lorem" ``Ipsum'' ,,Deutsch''
+	\subsection{Bündigkeit und Zentrieren}
+	\begin{center}
+		Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip\ldots ~ex ea commodo... consequat.
+	\end{center}
+	\subsection{Farben}
+	\label{sec:farben}
+	\definecolor{hellgrau}{gray}{0.5}
+	\definecolor{farbe}{rgb}{1,0.4,0.3}
+	\definecolor{farbe2}{RGB}{255,60,40}
+	\definecolor{farbe3}{HTML}{FF00AA}
+	\definecolor{farbe4}{cmyk}{1,0,1,0}
+	
+	\textcolor{hellgrau}{Das ist ein hellgrauer text}
+	\textcolor{farbe}{ABCDEFGHIJKLMNOP}
+	\textcolor{farbe2}{Some Random Text}
+	\textcolor{farbe3}{Hexadezimal}
+	\textcolor{farbe4}{CMYK}
+	
+	Nam liber \textcolor{red}{rot} tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor \colorbox{yellow}{text text text} sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip\ldots ~ex ea commodo... consequat.
+	\clearpage
+	
+	\subsection{Schriftgröße}
+	\tiny
+	tiny
+	\normalsize
+	
+	\scriptsize
+	scriptsize
+	\normalsize
+	
+	\footnotesize
+	footnotesize
+	\normalsize
+	
+	\small
+	small
+	
+	\large
+	large
+	
+	\Large
+	Large
+	
+	\LARGE
+	LARGE
+	
+	\huge
+	huge
+	
+	\Huge
+	Huge
+	
+	\normalsize
+	
+	\chapter{Listen}
+	
+	\section{Unsortierte Liste}
+	\begin{itemize}
+		\item Item 1
+		\item Item 2
+		\item Item 3
+	\end{itemize}
+
+	\section{Sortierte Liste}
+	\begin{enumerate}
+		\item Item 1
+		\item Item 2
+		\item Item 3
+	\end{enumerate}
+
+	\chapter{Tabellen}
+	
+	Dies ist eine \hypertarget{tabelle1}{Tabelle}
+	\begin{table}[h]	
+		%\rowcolors{2}{gray!25}{white}
+		\begin{tabular}{| l | c | r |} %c=center
+			\hline
+			HalloMoin & MoinMeister & AllesKlar \\
+			\hline
+			3 & 4 & 5 \\ \rowcolor{yellow}
+			3 & 4 & 5 \\ \cline{2-3}
+			3 & 4 & 5 \\
+			\hline
+		\end{tabular}
+	\end{table}
+	
+
+	\begin{table}[h]
+		\setlength{\tabcolsep}{10pt} %Abstand zwischen den Rändern
+		\begin{tabular}{l | p{5cm} | p{3cm}} % 3 Spalten
+			\multicolumn{3}{c}{Überschrift} \\
+			Sprache & Eigenschaften & Sonstige \\
+			\hline \hline
+			Python & Python ist geil! Python ist geil! Python ist geil! Python ist geil! Python ist geil! Python ist geil! Python ist geil! Python ist geil! Python ist geil! Python ist geil! Python ist geil! & Python ist geil! Python ist geil! Python ist geil! Python ist geil! Python ist geil! Python ist geil! Python ist geil! Python ist geil! \\
+		\end{tabular}
+	\caption{Dies ist eine wichtige Tabelle}
+	\label{meinetabelle}
+	\end{table}
+
+	\chapter{Grafiken}
+	\begin{figure}[b] %b = bottom
+		\centering
+		\includegraphics[height=3cm]{C:/Users/Hai/Pictures/19150671.png}
+		\caption{theCodeCampus}
+	\end{figure}
+
+	Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.	
+	
+	\section{Wrapfig}
+	\begin{wrapfigure}{r}{0.5\linewidth}
+		\vspace{-16pt} % Bild nach oben verschieben
+		\centering
+		\includegraphics[width=\linewidth]{C:/Users/Hai/Pictures/19150671.png}
+		\caption{Brackets}
+		\label{fig:brackets}
+	\end{wrapfigure}
+
+	Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.	
+	
+	\chapter{Referenzen}
+	
+	Siehe auch Kapitel \ref{sec:farben} auf Seite \pageref{sec:farben}
+	Siehe Bild \ref{fig:brackets}
+	
+	\section{Hyperrefs}
+	Mit Hyperref:\\
+	Wie in \hyperref[sec:farben]{Kapitel \ref{sec:farben}} beschrieben...	
+	\nameref{sec:farben} \\
+	Webseite: \url{https://hdm-stuttgart.de}
+	\href{https://hdm-stuttgart.de}{HdM} \\
+	\href{mailto:sv048@hdm-stuttgart.de}{Meine Email-Adresse} \\
+	\hyperlink{tabelle1}{Zur Tabelle}
+	
+	\section{Fußnoten}
+	Hallo, das ist eine Fußnote. \footnote{Fußnote}
+	\let\thefootnote\relax\footnote{Meine entspannte Fußnote} % Ohne Referenz
+	
+	%PDF einbinden
+	\includepdf[pages=-]{Mathe.pdf}
+
+	
+	\addcontentsline{toc}{chapter}{Anhang}	% Manuel ins Inhaltsverzeichnis
+	
+	\listoffigures
+
+	\chapter{Eidesstattliche Erklärung}  
+	Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
+	\vfill
+	Son Hai Vu \hfill \today
+	
+	\begin{minipage}{5cm}
+		\hrule
+		\vskip3mm
+		Name, Unterschrift
+	\end{minipage} \hfill
+	\begin{minipage}{5cm}
+		\hrule
+		\vskip3mm
+		\hfill Ort, Datum
+	\end{minipage}
+
+\end{document}
